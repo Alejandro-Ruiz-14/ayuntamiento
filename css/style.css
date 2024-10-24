@@ -1,0 +1,62 @@
+/* Reset de márgenes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    overflow: hidden;
+    background-color: rgb(36, 31, 31);
+}
+
+
+
+.content {
+    text-align: center;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: #ff5c5c;
+    text-shadow: 0 0 10px black;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    text-shadow: 0 0 5px black;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.button {
+    text-decoration: none;
+    color: white;
+    background-color: #d63333;
+    padding: 15px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000000a3;
+    font-size: 1.2rem;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #ff5c5c;
+    transform: scale(1.1);
+}
