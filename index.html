@@ -3,24 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juega o Muere</title>
-    <link rel="stylesheet" href="css/style.css">
-    
+    <title>Página con Video e Imagen</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
+    <img class="fondo" src="img/persona-ventana.jpg" >
+    <div class="container">
+        <div class="content">
+            <h1 class="blinking-text">Juega o Muere</h1>
+            <p>Jugaré, no me rendiré</p>
     
-    <div class="overlay"></div>
+            <button id="playVideoButton">CONTINUAR</button>
+        </div>
 
-    <div class="content">
-        <h1>🎃 Juega o Muere 🎃</h1>
-        <p>¿Tienes lo que se necesita para sobrevivir?</p>
+        <div id="videoContainer" class="hidden">
+            <video id="video" width="640" height="360">
+                <source src="video/ayuntamiento-2.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+        </div>
+  
+        <div id="imageButtonContainer" class="hidden">
+            <button class="botonimg" id="showImageButton">PISTA</button>
+        </div>
 
-        <div class="buttons">
-            <a href="#" class="button">Prueba 1: Elige tu destino</a>
-            <a href="#" class="button">Prueba 2: Escapa del laberinto</a>
-            <a href="#" class="button">Prueba 3: Resuelve el enigma</a>
-            <a href="#" class="button">Prueba 4: Enfrenta tus miedos</a>
+        <div id="imageContainer" class="hidden">
+            <img id="image" src="img/Ayuntamiento.jpg" alt="Imagen">
+            <a href="https://maps.app.goo.gl/va32mctY6gPewXHo9"><button class="botonfinal">UBICACIÓN</button></a>
         </div>
     </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
