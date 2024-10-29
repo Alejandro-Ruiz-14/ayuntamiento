@@ -82,7 +82,7 @@ button {
     cursor: pointer;
     box-shadow: 2px 2px 10px black;
     text-transform: uppercase; /* Mayúsculas para un mejor contraste */
-    margin-top: 130px; /*separar el botón de mostrar vídeo del párrafo de arriba*/
+    margin-top: 150px; /*separar el botón de mostrar vídeo del párrafo de arriba*/
 }
 
 button:hover {
